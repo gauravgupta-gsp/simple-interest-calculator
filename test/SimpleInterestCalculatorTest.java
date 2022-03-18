@@ -12,6 +12,7 @@ public class SimpleInterestCalculatorTest {
 		// AAA 
 		// Arrange
 		int principalAmount = 5000;
+		
 		int tenure = 365;
 		double expectedOutput = 265;
 		
