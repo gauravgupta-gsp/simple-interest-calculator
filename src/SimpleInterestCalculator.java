@@ -1,6 +1,9 @@
 
 public class SimpleInterestCalculator {
 
+	private double calculateSimpleInterest(int principalAmount , double rateOfInterest, double tenureInYears) {
+		return principalAmount * rateOfInterest *tenureInYears / 100;
+	}
 	public double calculate(int principalAmount, int tenure) {
 		double rateOfInterest = 5.3;
 		double tenureInyears = tenure / 365.0;
@@ -8,7 +11,7 @@ public class SimpleInterestCalculator {
 		if(tenure < 365) {
 			rateOfInterest = 5.2;
 		}
-		return principalAmount * rateOfInterest *tenureInyears / 100;
+		return calculateSimpleInterest(principalAmount, rateOfInterest, tenureInyears);
 		
 	}
 	
@@ -20,8 +23,9 @@ public class SimpleInterestCalculator {
 			rateOfInterest = 5.2;
 		}
 		 
-		return principalAmount * rateOfInterest *tenureInyears / 100;
+		return calculateSimpleInterest(principalAmount, rateOfInterest, tenureInyears);
 		
 	}
+	
 
 }
